@@ -1,0 +1,23 @@
+{
+  "trail": "abridged",
+  "date": "2026-10-11",
+  "gate_a": "approved-in-plan",
+  "gate_b": "approved-in-plan",
+  "gate_c": "pending-user-review",
+  "basis": "User supplied media, actual company design DNA, explicit build/media/3D task, confirmed EN/DE; abridged per Apollo START-HERE. No owner contract approval inferred.",
+  "design_system": {
+    "hero_size": 112,
+    "doctrine_display_max": 112
+  },
+  "phase_counts": {
+    "research": 1,
+    "brief": 1,
+    "assets": 1,
+    "plan": 1,
+    "qa": 1,
+    "finish_review": 2
+  },
+  "qa_passes": 1,
+  "finish_verdict": "PASS WITH NOTES",
+  "finish_score": 9
+}

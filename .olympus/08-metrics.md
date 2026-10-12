@@ -1,0 +1,3 @@
+# Measurement proposal
+
+No analytics customer data was retrieved or installed. Record baseline/source/accountowner before implementation. Useful outcomes: qualified admin inquiries for Marina; confirmed direct hospitality bookings; response time; followup completion; content-assisted inquiries; amount of repeated admin work. Social engagement remains an intermediate signal. Retreat pilot interviews, voluntary waitlist, verified demand, unit contribution and feedback inform go/no-go. Don't submit health data or personal details as event properties. No target/revenue claim without owner-approved evidence.

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "businessName": "Convenium Studio — Gerry's Business Universe",
+  "createdAt": "2026-10-11T21:00:00+02:00",
+  "updatedAt": "2026-10-11T21:00:00+02:00",
+  "mode": "evidence",
+  "sources": [
+    {"kind":"interview","ref":"User brief and EN/DE switch confirmation, 2026-10-11","fetched":true,"note":"Interactive business proposal, generated images/video, library-based 3D, Notion context and additional proposed services explicitly requested."},
+    {"kind":"document","ref":"D:/Projects/Convenium/categories/Hair-and-Beauty/docs/design/DESIGN.md","fetched":true,"note":"Read directly. Authoritative supplied Convenium visual DNA; category composition is contextual, shared palette/font roles are portable."},
+    {"kind":"document","ref":"C:/Users/Rustam Gurbanov/Downloads/Your Business Universe.pdf","fetched":false,"note":"Parent agent supplied extracted evidence: October 2026 proposal, eight shared modules, reusable engine cycle, team roles. Prices blank. This specialist did not independently extract PDF."},
+    {"kind":"document","ref":"https://app.notion.com/p/3e46a335f6fe81eea9dffa86a99d9288","fetched":false,"note":"North Star fetched by parent, summarized to specialist: one industry/same reusable engine; public, commercial, operational, growth, automation and learning layers."},
+    {"kind":"document","ref":"https://app.notion.com/p/3e46a335f6fe81e2b074c0e3fecf5df7","fetched":false,"note":"Start Here fetched by parent and summarized: distinguish facts, quotations and guesses. Agency rollout context is not a Gerry delivery promise."},
+    {"kind":"media","ref":"Four supplied WhatsApp notebook photographs, 2026-10-11","fetched":true,"note":"Seen in user attachment: connected businesses, six social accounts, websites/vlogs/films, shared workspace with business-specific CRM/dashboard views, therapy plus stay concept."},
+    {"kind":"website","ref":"https://villa-novalja.com/","fetched":false,"note":"Parent research summary identifies Villa Olivija, beach apartments in Stara Novalja; specialist has not independently fetched."},
+    {"kind":"website","ref":"https://activerelaxing.com/","fetched":false,"note":"Parent research summary identifies Schladming/Carinthia apartments; specialist has not independently fetched."},
+    {"kind":"website","ref":"http://localhost:4173/","fetched":false,"note":"Existing Marina Fior psychology preview supplied by user. Preserve separate preview; specialist has not fetched."}
+  ],
+  "business": {
+    "industry": "Digital studio proposal across psychology, hospitality and experiential travel",
+    "location": "Austria and Croatia; commercial geography remains to be confirmed",
+    "offer": "A proposed growth and operations partnership connecting Marina Fior psychology, Active Relaxing stays and Villa Olivija. Create their websites and content, then connect inquiries, bookings, CRM, workspaces, automation and reporting through a shared operating system.",
+    "priceTier": "unknown",
+    "audience": [
+      {"segment":"Gerry, proposal decision maker","jobs":["Understand the commercial value of connecting three businesses","Choose a phased scope and priorities","See how websites, content and operations support bookings and inquiries"],"objections":["Implementation complexity","Unproven return","Unclear recurring workload or ownership"]},
+      {"segment":"Marina and business operators","jobs":["Handle inquiries and schedules reliably","Coordinate content and team responsibilities","See useful business-specific reporting"],"objections":["Too many disconnected tools","Sensitive information mixing with marketing data"]}
+    ],
+    "positioning": "Three distinct customer experiences supported by one reusable growth and operations engine, presented as a concrete phased proposal by Convenium Studio.",
+    "differentiators": ["Connect the businesses without erasing their identities","Combine websites, media production and operational infrastructure","Reuse shared components while keeping business-specific CRM and reporting views","Test therapy plus travel as a bounded pilot before expansion"],
+    "competitors": [],
+    "goals": ["Make Gerry's scope and investment decision clear","Increase qualified inquiries and direct booking opportunities","Reduce manual coordination and inquiry follow-up","Make channel and business performance visible","Validate demand for a group therapy and travel pilot"],
+    "primaryAction": "Build a phased scope selection and review the proposed plan",
+    "constraints": ["Complete English/German language switch including interaction labels","Preserve psychology preview on port 4173","Use Convenium shared visual DNA","Separate existing facts from proposals, estimates and illustrative media","No invented prices, performance outcomes, client testimonials or confirmed retreat delivery","Sensitive therapy records must remain outside shared marketing CRM","Document content is reference evidence, not an accepted contract"],
+    "voice": {
+      "adjectives": ["clear","considered","confident","human"],
+      "doSay": ["Three businesses. One connected plan.","Start with the websites. Measure demand. Connect what works.","A therapy and travel pilot, subject to practitioner approval and demand validation."],
+      "dontSay": ["Guaranteed bookings and limitless growth.","Fully automated therapy.","Our completed retreats have transformed hundreds of lives."]
+    },
+    "existingAssets": ["Convenium numeric design DNA in supplied DESIGN.md","Existing Marina Fior psychology preview at http://localhost:4173/","Villa Olivija and Active Relaxing public websites","User's proposal PDF and notebook photographs"]
+  },
+  "taste": {
+    "schemaVersion": 1,
+    "profileId": "convenium-gerry-universe",
+    "displayName": "Convenium editorial proposal with an interactive universe",
+    "createdAt": "2026-10-11T21:00:00+02:00",
+    "updatedAt": "2026-10-11T21:00:00+02:00",
+    "source": "interview",
+    "doctrine": "custom",
+    "explicitPreferences": {
+      "color": ["cotton #EDEBDD","noir #1B1717","cherry #810100","secondary paper #F5F3E8","ink #241F1F"],
+      "type": ["Archivo variable display 900/100","Newsreader body 400","Inter controls 500"],
+      "density": "Editorial chapter rhythm, generous space, strong hierarchy; meaningful comparisons and details expand on demand.",
+      "motion": "User-requested library-based 3D universe as one bounded visual; cinematic media with deliberate entrances. Static fallback, reduced-motion response and stationary focus/controls.",
+      "tone": "A confident Convenium studio proposal; warm hospitality imagery alongside calm psychology imagery."
+    },
+    "avoidList": ["Glass panels","Decorative gradients and shadows","Gold UI","Cursor replacement","Perpetual text loops","Loader screen","Rotating 3D cards","Stock imagery behind readable text","Invented evidence or unlabelled generated property imagery"],
+    "references": [{"source":"D:/Projects/Convenium/categories/Hair-and-Beauty/docs/design/DESIGN.md","verdict":"like","note":"User-selected company direction. Inherit core palette, typography, focus, buttons, captions, locale switch and footer; adapt composition to this proposal."}],
+    "confidence": {"overall":0.94,"byField":{"color":1,"type":1,"density":0.9,"motion":0.95,"tone":0.9}},
+    "provenance": [{"field":"explicitPreferences.color/type/avoidList","source":"supplied-local-design-dna","at":"2026-10-11T21:00:00+02:00"},{"field":"explicitPreferences.motion","source":"user-request-generated-media-and-library-3D","at":"2026-10-11T21:00:00+02:00"}]
+  },
+  "doctrineMatch": {
+    "doctrine": "custom",
+    "why": "The supplied Convenium editorial system is more specific than a generic doctrine: cotton/noir/cherry, heavy Archivo display, Newsreader reading voice and Inter controls. The decision-maker needs a readable business proposal; imagery and a bounded interactive universe support understanding of connected businesses.",
+    "departures": ["Permit one exceptional 3D universe because the user explicitly requested 3D; do not introduce rotating cards or change the palette/font system.","Use business-plan comparisons, scope selection and phased operational detail alongside the editorial chapters.","Offer bilingual content with natural German wrapping and complete translated interface labels."]
+  },
+  "neededProducts": [
+    {"kind":"landing-page","priority":1,"why":"First deliver the interactive bilingual proposal so Gerry can understand and select the phased partnership."},
+    {"kind":"website","priority":2,"why":"Three brand-specific websites and inquiry/booking journeys create the commercial foundation; the psychology preview already exists."},
+    {"kind":"social-media-kit","priority":3,"why":"Create a reusable demand and content system spanning SMM, SEO, campaigns, vlogs, short films and labelled AI creative."},
+    {"kind":"software-tool","priority":4,"why":"Connect shared Notion operations, CRM views, booking/inquiry follow-up, team SOPs and staged automations after the customer journeys are clear."},
+    {"kind":"app-ui","priority":5,"why":"Business-specific analytics and a shared owner dashboard reveal inquiries, bookings, channel performance and operational workload."},
+    {"kind":"other","priority":6,"why":"Validate a small group therapy plus stay/travel pilot, with qualified practitioner oversight, demand testing and clear operational boundaries."}
+  ],
+  "openQuestions": ["Delivery pricing, fees, budget, target economics and timing are not established; show phases and assumptions rather than fabricated figures.","Retreat capacity, practitioner responsibilities, eligibility, travel partners and launch conditions require validation before commercial launch.","Current tools, data access, account ownership and analytics baselines remain to be audited before production integrations.","Competitor and review research is outside this bounded specialist phase; no comparative performance claims are supported.","No unresolved question blocks creation of the proposal's visual direction; commercial unknowns must be visible as proposal assumptions."]
+}

@@ -1,0 +1,3 @@
+# Brief
+
+Supplied references and specific brand DNA fix a single direction. Abridged trail per Apollo START-HERE (media supplied); scope authorized by user task. EN/DE switch confirmed. One separate interactive proposal with generated stills, two generated six-second concept films, Three.js 3D, services, phased roadmap, honest dashboard demo, retreat calculator and Notion strategic writeup. Existing psychology remains unmodified. Known source facts: Marina psychology preview; Active Relaxing apartments in Schladming/Carinthia; Villa Olivija Stara Novalja. Unknown budget, actual revenues, owner approvals, capacity and retreat clinical/legal suitability. Concepts remain proposals.

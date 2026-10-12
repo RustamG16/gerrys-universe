@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.claude/
+# Private source material and scraped third-party pages stay local
+.olympus/pdf-reference.png
+.olympus/active-source.html
+.olympus/villa-source.html
