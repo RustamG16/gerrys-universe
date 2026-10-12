@@ -173,8 +173,8 @@ export default function Partnership() {
         </ul>
         <p className="caption muted">
           {L(
-            'Category: Red-White-Red Card for graduates of Austrian universities. The job must match the degree and pay at least the local rate for graduates. Source: oesterreich.gv.at, checked 12 Oct 2026.',
-            'Kategorie: Rot-Weiß-Rot-Karte für Absolvent:innen österreichischer Hochschulen. Der Job muss zum Studium passen und mindestens das ortsübliche Entgelt für Absolvent:innen zahlen. Quelle: oesterreich.gv.at, geprüft am 12.10.2026.',
+            'Category: Red-White-Red Card for other key workers. Needs at least 55 points (qualification, experience, language, age) and a gross salary of at least 50% of the maximum social-insurance contribution base (≈ €3,465 in 2026, plus special payments). The AMS also checks whether a registered jobseeker could fill the role, so the job description must be specific. Source: oesterreich.gv.at, checked 12 Oct 2026.',
+            'Kategorie: Rot-Weiß-Rot-Karte für sonstige Schlüsselkräfte. Erforderlich sind mindestens 55 Punkte (Qualifikation, Erfahrung, Sprache, Alter) und ein Bruttogehalt von mindestens 50 % der ASVG-Höchstbeitragsgrundlage (≈ 3.465 € im Jahr 2026, zuzüglich Sonderzahlungen). Das AMS prüft außerdem, ob eine arbeitsuchende Person die Stelle besetzen könnte — die Stellenbeschreibung muss daher konkret sein. Quelle: oesterreich.gv.at, geprüft am 12.10.2026.',
           )}
         </p>
       </section>

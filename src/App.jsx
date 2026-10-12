@@ -17,6 +17,7 @@ const Mission = lazy(() => import('./levels/Mission.jsx'));
 const Edge = lazy(() => import('./levels/Edge.jsx'));
 const NotionHQ = lazy(() => import('./levels/NotionHQ.jsx'));
 const Partnership = lazy(() => import('./levels/Partnership.jsx'));
+const Ask = lazy(() => import('./levels/Ask.jsx'));
 
 export default function App() {
   const location = useLocation();
@@ -76,6 +77,7 @@ export default function App() {
             <Route path="/speedrun" element={<Navigate to="/edge" replace />} />
             <Route path="/notion" element={<NotionHQ />} />
             <Route path="/partnership" element={<Partnership />} />
+            <Route path="/ask" element={<Ask />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>

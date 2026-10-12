@@ -71,7 +71,7 @@ export const visaSteps = [
   { title: pair('Sign the offer', 'Angebot unterschreiben'), body: pair('Permanent, full-time, Digitalisation Manager.', 'Unbefristet, Vollzeit, Digitalisation Manager.') },
   { title: pair('Employer declaration', 'Arbeitgebererklärung'), body: pair('One form under the AuslBG, signed by Gerry.', 'Ein Formular nach AuslBG, von Gerry unterschrieben.') },
   { title: pair('File the application', 'Antrag einreichen'), body: pair('At the residence authority. Gerry may file it for Rustam. Fee €218.', 'Bei der Niederlassungsbehörde. Gerry darf für Rustam einreichen. Gebühr 218 €.') },
-  { title: pair('AMS check', 'AMS-Prüfung'), body: pair('Job matches the degree, salary meets the local rate.', 'Job passt zum Studium, Gehalt entspricht dem ortsüblichen Niveau.') },
+  { title: pair('AMS check', 'AMS-Prüfung'), body: pair('At least 55 points, salary at the legal minimum, and a check whether a registered jobseeker could fill the role.', 'Mindestens 55 Punkte, Gehalt auf dem gesetzlichen Mindestniveau und Prüfung, ob eine arbeitsuchende Person die Stelle besetzen könnte.') },
   { title: pair('Card & start', 'Karte & Start'), body: pair('Decision within 8 weeks. Work starts after the card is collected.', 'Entscheidung binnen 8 Wochen. Arbeitsbeginn nach Abholung der Karte.') },
 ];
 

@@ -11,6 +11,7 @@ export const bodies = [
   { id: 'edge', kind: 'comet', name: pair('Your edge', 'Dein Vorteil'), sub: pair('One partner, all digital · Level 04', 'Ein Partner, alles digital · Level 04'), to: '/edge', color: 'paper', radius: 6.8, size: 0.14, speed: 0.42, phase: 3.1, tilt: -0.12 },
   { id: 'notion', kind: 'station', name: 'Notion HQ', sub: pair('Workspace design · Level 05', 'Workspace-Aufbau · Level 05'), to: '/notion', color: 'paper', radius: 5.3, size: 0.42, speed: -0.06, phase: 5.6, tilt: 0.18 },
   { id: 'partnership', kind: 'satellite', name: pair('Partnership', 'Partnerschaft'), sub: pair('Working together · Level 06', 'Zusammenarbeit · Level 06'), to: '/partnership', color: 'hq', radius: 7.4, size: 0.22, speed: 0.05, phase: 0.9, tilt: -0.2 },
+  { id: 'ask', kind: 'satellite', name: pair('Ask questions', 'Fragen stellen'), sub: pair('Your own AI advisor · Level 07', 'Dein eigener KI-Berater · Level 07'), to: '/ask', color: 'paper', radius: 3.8, size: 0.18, speed: -0.12, phase: 4.0, tilt: 0.35 },
 ];
 
 export const spaceColors = {

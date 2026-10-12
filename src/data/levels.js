@@ -9,6 +9,7 @@ export const levels = [
   { id: 'edge', path: '/edge', num: '04', theme: 'cream', title: pair('Your edge', 'Dein Vorteil'), hint: pair('One partner, all digital', 'Ein Partner, alles digital'), xp: 150 },
   { id: 'notion', path: '/notion', num: '05', theme: 'paper', title: pair('Notion HQ', 'Notion-HQ'), hint: pair('Workspace design', 'Workspace-Aufbau'), xp: 150 },
   { id: 'partnership', path: '/partnership', num: '06', theme: 'cream', title: pair('Partnership', 'Partnerschaft'), hint: pair('Working together', 'Zusammenarbeit'), xp: 200 },
+  { id: 'ask', path: '/ask', num: '07', theme: 'noir', title: pair('Ask questions', 'Fragen stellen'), hint: pair('Your own AI advisor', 'Dein eigener KI-Berater'), xp: 100 },
 ];
 
 export const totalXp = levels.reduce((s, l) => s + l.xp, 0);
