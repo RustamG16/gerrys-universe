@@ -44,7 +44,7 @@ export const workTypes = [
   {
     id: 'network',
     title: pair('Network projects', 'Netzwerk-Projekte'),
-    examples: pair('New clients from Gerry’s network', 'Neue Kunden aus Gerrys Netzwerk'),
+    examples: pair('Multi-business owners from Gerry’s network who need one partner for unification & automation', 'Unternehmer mit mehreren Geschäften aus Gerrys Netzwerk, die einen Partner für Vereinheitlichung & Automatisierung brauchen'),
     pay: pair('Salary + commission', 'Gehalt + Provision'),
     items: [pair('Gerry opens the door', 'Gerry öffnet die Tür'), pair('Gerry’s company signs & invoices', 'Gerrys Firma unterschreibt & verrechnet'), pair('Rustam delivers the project', 'Rustam liefert das Projekt')],
   },

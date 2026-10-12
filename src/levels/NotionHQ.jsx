@@ -104,7 +104,7 @@ export default function NotionHQ() {
           </ul>
           <span>{L('Researched 11 Oct 2026 · verify at checkout', 'Recherchiert am 11. Okt 2026 · beim Kauf prüfen')}</span>
           <a className="text-link" href="https://www.notion.com/pricing" target="_blank" rel="noreferrer">notion.com/pricing <ExternalLink size={12} /></a>
-          <Link className="text-link" to="/speedrun">{L('See the full tool stack →', 'Ganzen Tool-Stack ansehen →')}</Link>
+          <Link className="text-link" to="/edge#powerups-title">{L('See the full tool stack →', 'Ganzen Tool-Stack ansehen →')}</Link>
         </aside>
       </section>
 

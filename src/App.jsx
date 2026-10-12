@@ -14,7 +14,7 @@ import Worlds from './levels/Worlds.jsx';
 
 const Insights = lazy(() => import('./levels/Insights.jsx'));
 const Mission = lazy(() => import('./levels/Mission.jsx'));
-const Speedrun = lazy(() => import('./levels/Speedrun.jsx'));
+const Edge = lazy(() => import('./levels/Edge.jsx'));
 const NotionHQ = lazy(() => import('./levels/NotionHQ.jsx'));
 const Partnership = lazy(() => import('./levels/Partnership.jsx'));
 
@@ -72,7 +72,8 @@ export default function App() {
             <Route path="/worlds" element={<Worlds />} />
             <Route path="/insights" element={<Insights />} />
             <Route path="/mission" element={<Mission />} />
-            <Route path="/speedrun" element={<Speedrun />} />
+            <Route path="/edge" element={<Edge />} />
+            <Route path="/speedrun" element={<Navigate to="/edge" replace />} />
             <Route path="/notion" element={<NotionHQ />} />
             <Route path="/partnership" element={<Partnership />} />
             <Route path="*" element={<Navigate to="/" replace />} />

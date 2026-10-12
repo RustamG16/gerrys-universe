@@ -229,10 +229,10 @@ export default function Partnership() {
 function DealFlow() {
   const { L } = useApp();
   const nodes = [
-    { id: 'client', icon: <Handshake size={26} />, title: L('Client', 'Kunde'), body: L('Someone from your network needs a website, app or system.', 'Jemand aus deinem Netzwerk braucht Website, App oder System.') },
+    { id: 'client', icon: <Handshake size={26} />, title: L('Client', 'Kunde'), body: L('A multi-business owner from your network who wants the whole digital side unified and automated.', 'Ein Unternehmer mit mehreren Geschäften aus deinem Netzwerk, der sein Digitales vereinheitlicht und automatisiert haben will.') },
     { id: 'gerry', icon: <Users size={26} />, title: 'Gerry', body: L('Opens the door and makes the introduction.', 'Öffnet die Tür und stellt den Kontakt her.') },
     { id: 'company', icon: <Building2 size={26} />, title: L('Gerry’s company', 'Gerrys Firma'), body: L('Signs the deal, invoices the client, employs Rustam.', 'Unterschreibt, verrechnet dem Kunden, beschäftigt Rustam.') },
-    { id: 'rustam', icon: <Code2 size={26} />, title: 'Rustam', body: L('Designs, builds and delivers — with his own system.', 'Gestaltet, baut und liefert — mit seinem eigenen System.') },
+    { id: 'rustam', icon: <Code2 size={26} />, title: 'Rustam', body: L('One partner for everything digital — powered by the Convenium system.', 'Ein Partner für alles Digitale — getragen vom Convenium-System.') },
   ];
   return (
     <Reveal className="pt-flow" stagger={0.1}>
