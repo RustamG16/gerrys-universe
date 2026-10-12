@@ -62,8 +62,8 @@ export const businesses = [
 export const socialVoices = [
   { who: 'Marina Fior', kind: pair('Brand', 'Marke'), phase: 'A' },
   { who: 'Active Relaxing', kind: pair('Brand', 'Marke'), phase: 'A' },
-  { who: 'Active Relaxing AI guide', kind: pair('Disclosed AI creator', 'Gekennzeichnete KI-Figur'), phase: 'later' },
+  { who: pair('Active Relaxing AI guide', 'KI-Guide Active Relaxing'), kind: pair('Disclosed AI creator', 'Gekennzeichnete KI-Figur'), phase: 'later' },
   { who: 'Villa Olivija', kind: pair('Brand', 'Marke'), phase: 'villa' },
-  { who: 'Villa AI guide', kind: pair('Disclosed AI creator', 'Gekennzeichnete KI-Figur'), phase: 'villa' },
-  { who: 'Villach retreat', kind: pair('Concept', 'Konzept'), phase: 'secret' },
+  { who: pair('Villa AI guide', 'KI-Guide Villa'), kind: pair('Disclosed AI creator', 'Gekennzeichnete KI-Figur'), phase: 'villa' },
+  { who: pair('Villach retreat', 'Villach-Retreat'), kind: pair('Concept', 'Konzept'), phase: 'secret' },
 ];

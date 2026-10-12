@@ -1,6 +1,9 @@
 import React, { lazy, Suspense, useEffect, useLayoutEffect, useRef } from 'react';
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import gsap from 'gsap';
+
+// Time-based animation: slow frames must not stretch transitions.
+gsap.ticker.lagSmoothing(0);
 import { useApp } from './lib/store.jsx';
 import { levels } from './data/levels.js';
 import Hud from './components/hud/Hud.jsx';
@@ -44,7 +47,12 @@ export default function App() {
         .set(curtain.current, { display: 'none' })
         .fromTo(stage.current, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: 'power2.out' }, '-=0.35');
     });
-    return () => ctx.revert();
+    // Safety net: never leave the curtain up or the level hidden if frames stall (e.g. while 3D loads).
+    const safety = setTimeout(() => ctx.revert(), 1600);
+    return () => {
+      clearTimeout(safety);
+      ctx.revert();
+    };
   }, [level.id]);
 
   return (

@@ -72,8 +72,8 @@ export default function RetreatLab() {
     <div className="retreat-lab">
       <div className="retreat-intro">
         <figure className="retreat-image">
-          <img src={media('retreat.webp')} alt={L('Concept image of a quiet group retreat', 'Konzeptbild eines ruhigen Gruppenretreats')} loading="lazy" />
-          <figcaption>{L('AI-generated concept · not a real place or programme', 'KI-generiertes Konzept · kein realer Ort oder Programm')}</figcaption>
+          <img src={media('villach-retreat.webp')} alt={L('Concept image: a small group in conversation on a lakeside villa terrace near Villach', 'Konzeptbild: kleine Gruppe im Gespräch auf einer Villenterrasse am See bei Villach')} loading="lazy" />
+          <figcaption>{L('AI-generated with Higgsfield · concept, not a real villa, people or programme', 'Mit Higgsfield KI-generiert · Konzept, keine reale Villa, Personen oder Programm')}</figcaption>
         </figure>
         <div>
           <div className="retreat-tabs" role="tablist" aria-label={L('Retreat formats', 'Retreat-Formate')}>
@@ -93,8 +93,8 @@ export default function RetreatLab() {
           </div>
           <p className="note">
             {L(
-              'Group sessions led by Marina within her professional scope as a clinical and health psychologist. “Psychotherapie” is a protected title in Austria — wording, safeguarding and insurance need professional review. Clinical records stay out of the guest CRM.',
-              'Gruppeneinheiten unter Marinas Leitung im Rahmen ihrer Befugnis als Klinische und Gesundheitspsychologin. „Psychotherapie“ ist in Österreich eine geschützte Bezeichnung – Formulierung, Schutzkonzept und Versicherung brauchen fachliche Prüfung. Klinische Unterlagen bleiben außerhalb des Gäste-CRM.',
+              'Group sessions led by Marina within her professional scope as a clinical and health psychologist (qualifications as listed on her website). “Psychotherapie” is a protected title in Austria — wording, safeguarding and insurance need professional review. Clinical records stay out of the guest CRM.',
+              'Gruppeneinheiten unter Marinas Leitung im Rahmen ihrer Befugnis als Klinische und Gesundheitspsychologin (Qualifikationen laut ihrer Website). „Psychotherapie“ ist in Österreich eine geschützte Bezeichnung – Formulierung, Schutzkonzept und Versicherung brauchen fachliche Prüfung. Klinische Unterlagen bleiben außerhalb des Gäste-CRM.',
             )}
           </p>
         </div>
@@ -114,7 +114,7 @@ export default function RetreatLab() {
         </div>
         <div>
           <div className="calc-results" aria-live="polite">
-            <div><span>{L('Gross revenue', 'Bruttoumsatz')}</span><strong>{euro(revenue)}</strong></div>
+            <div><span>{L('Revenue (before tax)', 'Umsatz (vor Steuern)')}</span><strong>{euro(revenue)}</strong></div>
             <div className={contribution < 0 ? 'negative' : ''}><span>{L('Contribution', 'Deckungsbeitrag')}</span><strong>{euro(contribution)}</strong></div>
             <div>
               <span>{L('Break-even', 'Kostendeckung ab')}</span>

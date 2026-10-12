@@ -4,6 +4,7 @@ import { Check, X, ExternalLink, Users, Wallet, Zap, ListChecks, Globe, Bot, Tar
 import { useApp } from '../lib/store.jsx';
 import { options, criteria, setupSteps, modules } from '../data/notion.js';
 import LevelHead from '../components/LevelHead.jsx';
+import { media } from '../lib/store.jsx';
 import Reveal from '../components/Reveal.jsx';
 import LoginFlow from '../components/diagrams/LoginFlow.jsx';
 import WorkspaceTree from '../components/diagrams/WorkspaceTree.jsx';
@@ -23,6 +24,11 @@ export default function NotionHQ() {
         title={[L('No nested workspaces.', 'Keine verschachtelten Workspaces.'), L('One universe, four teamspaces.', 'Ein Universum, vier Teamspaces.')]}
         lead={L('Gerry owns it. Rustam works in it from his own account — next to Convenium OS, without switching accounts.', 'Gerry gehört er. Rustam arbeitet darin mit seinem eigenen Konto – neben Convenium OS, ohne Kontowechsel.')}
       />
+
+      <figure className="wrap hq-hero">
+        <img src={media('notion-hq.webp')} alt={L('Concept render of a command deck overlooking the business universe', 'Konzeptbild einer Kommandobrücke mit Blick auf das Business-Universum')} />
+        <figcaption>{L('AI-generated with Higgsfield · illustrative concept, not the Notion interface', 'Mit Higgsfield KI-generiert · illustratives Konzept, nicht die Notion-Oberfläche')}</figcaption>
+      </figure>
 
       <Reveal className="wrap notion-grid">
         <LoginFlow />
@@ -96,6 +102,7 @@ export default function NotionHQ() {
             <li><Check size={14} /> {L('Notion AI included · custom-agent credits extra', 'Notion-KI inklusive · Agenten-Credits extra')}</li>
             <li><Check size={14} /> {L('Granular permissions', 'Feine Berechtigungen')}</li>
           </ul>
+          <span>{L('Researched 11 Oct 2026 · verify at checkout', 'Recherchiert am 11. Okt 2026 · beim Kauf prüfen')}</span>
           <a className="text-link" href="https://www.notion.com/pricing" target="_blank" rel="noreferrer">notion.com/pricing <ExternalLink size={12} /></a>
           <Link className="text-link" to="/speedrun">{L('See the full tool stack →', 'Ganzen Tool-Stack ansehen →')}</Link>
         </aside>

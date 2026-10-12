@@ -70,7 +70,7 @@ export const quests = [
     pair('AI drafts from existing documents and voice notes; owners review.', 'KI-Entwürfe aus vorhandenen Dokumenten und Sprachnotizen; Inhaber prüfen.'),
     pair('Knowledge out of heads and into a system the AI can use.', 'Wissen aus den Köpfen in ein System, das die KI nutzen kann.'),
     pair('26 Oct → 22 Nov 2026', '26. Okt → 22. Nov 2026'),
-    'Rustam · owners'),
+    pair('Rustam · owners', 'Rustam · Inhaber')),
   q('B3', 'B', '2026-11-09', '2026-12-06',
     pair('Pipelines & dashboards', 'Pipelines & Dashboards'),
     pair('One enquiry pipeline per business plus an HQ dashboard that rolls everything up.', 'Eine Anfrage-Pipeline pro Geschäft plus ein HQ-Dashboard, das alles zusammenführt.'),
@@ -128,6 +128,9 @@ export const quests = [
     pair('18 Jan → 16 Apr 2027', '18. Jän → 16. Apr 2027'),
     'Gerry · Marina · Rustam'),
 ];
+
+// Finish-to-start dependencies drawn on the Gantt.
+export const deps = [['A1', 'A2'], ['A3', 'A4'], ['A3', 'V1'], ['B1', 'B2'], ['B3', 'B4'], ['V1', 'V2'], ['R0', 'R1']];
 
 // Retreat formats — reframed for Villach villas. "Psychotherapie" is a protected title in Austria,
 // so the concept is described as psychological group sessions within Marina's confirmed scope.

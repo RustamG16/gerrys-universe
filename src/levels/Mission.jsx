@@ -9,6 +9,8 @@ import QuestGantt from '../components/charts/QuestGantt.jsx';
 import RetreatLab from '../components/RetreatLab.jsx';
 import Loadout from '../components/Loadout.jsx';
 import Reveal from '../components/Reveal.jsx';
+import VideoCard from '../components/VideoCard.jsx';
+import { media } from '../lib/store.jsx';
 
 const SMART = [
   ['S', ['Specific', 'Spezifisch']],
@@ -29,7 +31,7 @@ function QuestCard({ q }) {
           <small>{t(tr.name)}</small>
           <h3>{t(q.title)}</h3>
         </div>
-        <span className="owner">{q.owner}</span>
+        <span className="owner">{t(q.owner)}</span>
       </header>
       <ol className="smart-tiles">
         {SMART.map(([k, name], i) => (
@@ -88,6 +90,9 @@ export default function Mission() {
         </div>
         <QuestGantt selected={sel} onSelect={setSel} secret={secret} />
         {q && <QuestCard q={q} />}
+        <div className="mission-film">
+          <VideoCard src={media('mission-timeline.mp4')} poster={media('mission-timeline-poster.jpg')} title={L('The mission in 12 seconds', 'Die Mission in 12 Sekunden')} note={L('Animated with Remotion', 'Animiert mit Remotion')} />
+        </div>
       </section>
 
       <section className="wrap secret-level" id="retreat" aria-labelledby="retreat-title">

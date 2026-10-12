@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Lock, HelpCircle } from 'lucide-react';
 import { useApp, media } from '../lib/store.jsx';
 import { bodies, spaceColors } from '../data/universe.js';
-import { levels } from '../data/levels.js';
+import VideoCard from '../components/VideoCard.jsx';
 
 const UniverseScene = lazy(() => import('../three/UniverseScene.jsx'));
 
@@ -109,8 +109,11 @@ export default function Hub() {
             </li>
           ))}
         </ul>
+        <div className="hub-intro">
+          <VideoCard src={media('universe-intro.mp4')} poster={media('universe-intro-poster.jpg')} title={L('Six-second intro', 'Sechs-Sekunden-Intro')} note={L('Animated with Remotion', 'Animiert mit Remotion')} />
+        </div>
         <p className="caption muted">
-          {L('3D map built with Three.js / React Three Fiber. Everything is also reachable from this list and the level bar.', '3D-Karte mit Three.js / React Three Fiber. Alles ist auch über diese Liste und die Levelleiste erreichbar.')}
+          {L('3D map built with Three.js / React Three Fiber; the Notion HQ station model is AI-generated with Higgsfield. Everything is also reachable from this list and the level bar.', '3D-Karte mit Three.js / React Three Fiber; das Notion-HQ-Stationsmodell ist mit Higgsfield KI-generiert. Alles ist auch über diese Liste und die Levelleiste erreichbar.')}
         </p>
       </section>
     </div>

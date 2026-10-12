@@ -94,7 +94,7 @@ export default function Worlds() {
                 <li key={i} className={'voice phase-' + v.phase}>
                   <span className="voice-icon" aria-hidden="true">{v.kind.en.includes('AI') ? <Bot size={18} /> : v.phase === 'secret' ? <Sparkles size={18} /> : <Instagram size={18} />}</span>
                   <span>
-                    <strong>{v.who}</strong>
+                    <strong>{t(v.who)}</strong>
                     <small>{t(v.kind)}</small>
                   </span>
                   <em>

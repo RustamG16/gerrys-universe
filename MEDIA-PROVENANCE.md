@@ -15,5 +15,16 @@ All imagery and clips in this private proposal are for concept review. Rights/co
 
 First coastal job25369c41-f8cd-4e4c-bc43-47d7203bb1b5 failed. No result incorporated. Generated views do not prove specific accommodation or clinical outcomes. Final property marketing should use owner-approved true photos/footage.
 
-Fonts copied from actual Convenium project kit: Archivo, Inter, Newsreader WOFF2. Three.js and OrbitControls provide the interactive sculpture with stock library geometry/materials; no third-party proprietary mesh/model was claimed or imported.
+Fonts copied from actual Convenium project kit: Archivo, Inter, Newsreader WOFF2. v1: Three.js and OrbitControls provided the sculpture with stock library geometry/materials. v2: the hub uses library primitives plus one AI-generated mesh (station.glb, Higgsfield Meshy, see below); no third-party proprietary model is imported.
 
+
+## v2 additions (12 Oct 2026)
+
+| File | Origin | Use |
+|---|---|---|
+| villach-retreat.webp | Higgsfield `gpt_image_2_5`, job 191607f8-67fa-4a76-99ab-be26ef35585b | Fictional lakeside villa near Villach and fictional people; labelled AI concept in Mission secret level |
+| notion-hq.webp | Higgsfield `gpt_image_2_5`, job 49db909f-4612-42cb-9680-0d7c0ce8be5d | Illustrative command-deck concept on Notion HQ; not the Notion interface |
+| station.glb | Higgsfield `meshy_v6_text_to_3d` (low-poly), job d5f05b4e-6efb-4306-adb3-12658f86621d; texture downscaled to 1024 px | Notion HQ station in the 3D hub |
+| universe-intro.mp4 / speedrun.mp4 / mission-timeline.mp4 (+ -poster.jpg) | Rendered locally with Remotion from `video/` | Animated explainers; data mirrors `src/data` |
+
+Retreat concept image `retreat.webp` (v1) is no longer used on the page. Total Higgsfield spend for v2: ≈ 25.5 credits.

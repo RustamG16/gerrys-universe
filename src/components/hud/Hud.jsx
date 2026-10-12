@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Pause, Play, Check } from 'lucide-react';
 import { useApp } from '../../lib/store.jsx';
@@ -8,6 +8,13 @@ export default function Hud({ level }) {
   const { t, L, lang, setLang, paused, setPaused, visited } = useApp();
   const xp = levels.filter((l) => visited.includes(l.id)).reduce((s, l) => s + l.xp, 0);
   const pct = Math.round((xp / totalXp) * 100);
+  const mapRef = useRef(null);
+
+  // Keep the current level visible in the scrollable level bar on small screens.
+  useEffect(() => {
+    const nav = mapRef.current, active = nav?.querySelector('a.active');
+    if (nav && active && nav.scrollWidth > nav.clientWidth) nav.scrollTo({ left: active.offsetLeft - nav.clientWidth / 2 + active.offsetWidth / 2 });
+  }, [level.id]);
 
   return (
     <header className="hud" data-theme={level.theme}>
@@ -16,7 +23,7 @@ export default function Hud({ level }) {
         <small>GERRY’S UNIVERSE</small>
       </NavLink>
 
-      <nav className="level-map" aria-label={L('Levels', 'Level')}>
+      <nav className="level-map" ref={mapRef} aria-label={L('Levels', 'Level')}>
         <ol>
           {levels.map((l) => {
             const done = visited.includes(l.id);

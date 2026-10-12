@@ -3,7 +3,7 @@ import { scaleTime } from 'd3-scale';
 import { timeMonth } from 'd3-time';
 import { Lock, HelpCircle } from 'lucide-react';
 import { useApp } from '../../lib/store.jsx';
-import { quests, tracks, PLAN_RANGE } from '../../data/plan.js';
+import { quests, tracks, deps, PLAN_RANGE } from '../../data/plan.js';
 import { brand } from '../../data/levels.js';
 import { monthNames } from '../../data/insights.js';
 import { useTip } from './ChartFrame.jsx';
@@ -14,17 +14,20 @@ export default function QuestGantt({ selected, onSelect, secret }) {
   const { t, L, lang } = useApp();
   const tip = useTip();
   const x = useMemo(() => scaleTime().domain(PLAN_RANGE.map((d) => new Date(d))).range([LABEL + 8, W - 8]), []);
-  const months = x.ticks(timeMonth.every(1)).filter((m) => m >= x.domain()[0]);
+  // Month ticks plus the range start, so the kickoff weeks in October are labelled too.
+  const months = [x.domain()[0], ...x.ticks(timeMonth.every(1)).filter((m) => m > x.domain()[0])];
   const today = new Date();
   const todayIn = today >= x.domain()[0] && today <= x.domain()[1];
 
   // Layout: track header + one row per quest.
   let y = HEAD;
+  const rowY = {};
   const layout = tracks.map((tr) => {
     const top = y;
     y += TRACKHEAD;
     const rows = quests.filter((q) => q.track === tr.id).map((q) => {
       const row = { q, y };
+      rowY[q.id] = y;
       y += ROW;
       return row;
     });
@@ -63,7 +66,7 @@ export default function QuestGantt({ selected, onSelect, secret }) {
                     <>
                       <b>{q.id} · {t(q.title)}</b>
                       <span>{fmt(q.start)} → {fmt(q.end)}</span>
-                      <span>{q.owner}</span>
+                      <span>{t(q.owner)}</span>
                     </>
                   );
                   return (
@@ -100,6 +103,16 @@ export default function QuestGantt({ selected, onSelect, secret }) {
               </g>
             );
           })}
+          <g className="deps" aria-hidden="true">
+            {deps.map(([a, b]) => {
+              const qa = quests.find((q) => q.id === a), qb = quests.find((q) => q.id === b);
+              const hidden = tracks.find((tr) => tr.id === qb.track).secret && !secret;
+              const sx = x(new Date(qa.end + 'T23:59')), sy = rowY[a] + ROW / 2 - 3;
+              const tx = x(new Date(qb.start)), ty = rowY[b] + ROW / 2 - 3;
+              const mid = Math.max(sx + 6, tx - 6);
+              return <path key={a + b} d={`M${sx} ${sy} H${mid} V${ty} H${tx}`} className={'dep' + (hidden ? ' hidden' : '')} />;
+            })}
+          </g>
           <g className="milestone">
             <line x1={x(new Date('2026-10-19'))} x2={x(new Date('2026-10-19'))} y1={HEAD - 8} y2={H} />
             <text x={x(new Date('2026-10-19')) + 4} y={H - 4} className="axis-label">{L('Kickoff', 'Start')}</text>

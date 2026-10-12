@@ -5,3 +5,5 @@ dist/
 .olympus/pdf-reference.png
 .olympus/active-source.html
 .olympus/villa-source.html
+video/out/
+video/render.log

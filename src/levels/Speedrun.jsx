@@ -86,9 +86,9 @@ export default function Speedrun() {
         <QrPrompt />
       </section>
 
-      {links.speedrunVideo && (
+      {(
         <section className="wrap">
-          <VideoCard src={media(links.speedrunVideo)} poster={links.speedrunPoster ? media(links.speedrunPoster) : undefined} title={L('Speedrun in 10 seconds', 'Speedrun in 10 Sekunden')} note={L('Animated with Remotion', 'Animiert mit Remotion')} />
+          <VideoCard src={media('speedrun.mp4')} poster={media('speedrun-poster.jpg')} title={L('Speedrun in 10 seconds', 'Speedrun in 10 Sekunden')} note={L('Animated with Remotion', 'Animiert mit Remotion')} />
         </section>
       )}
 

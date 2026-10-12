@@ -51,7 +51,7 @@
 .world-tabs strong { font: 900 clamp(20px, 2.4vw, 32px)/1 Archivo; letter-spacing: -.04em; }
 .world-tabs small { font: 500 12px Inter; grid-column: 2; color: var(--c); }
 .world-tabs svg { grid-row: 1; grid-column: 3; }
-.world-panel { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; padding-top: 48px; outline: none; animation: panel-in .45s ease-out; }
+.world-panel { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; padding-top: 48px; animation: panel-in .45s ease-out; }
 @keyframes panel-in { from { opacity: 0; transform: translateY(12px); } }
 @media (prefers-reduced-motion: reduce) { .world-panel { animation: none; } }
 .world-media { position: relative; }
@@ -204,7 +204,7 @@
 .tool-src:hover { color: var(--cherry); }
 .seg { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 3px; border: 1px solid var(--rule); border-radius: 6px; margin-bottom: 8px; }
 .seg button { min-height: 36px; padding: 6px 12px; border-radius: 4px; font-size: 13px; }
-.seg button[aria-selected='true'], .seg button[aria-checked='true'] { background: var(--fg); color: var(--surface); }
+.seg button[aria-selected='true'], .seg button[aria-pressed='true'] { background: var(--fg); color: var(--surface); }
 .seg button[aria-selected='true'] { box-shadow: inset 0 -3px 0 var(--c, transparent); }
 .seg.small { margin: 0; }
 .stepper { display: inline-flex; align-items: center; gap: 4px; align-self: flex-start; border: 1px solid var(--rule); border-radius: 6px; }
@@ -245,6 +245,13 @@
 .callout { display: flex; gap: 14px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--rule); margin-bottom: 16px; }
 .callout p { font: 400 14px/1.55 Inter; margin: 0; }
 .callout svg { flex: none; margin-top: 2px; color: var(--cherry); }
+
+/* ---------- Media slots ---------- */
+.hq-hero { margin-bottom: 56px; }
+.hq-hero img { aspect-ratio: 16 / 7; border-radius: 8px; }
+.hq-hero figcaption, .retreat-image figcaption { margin-top: 8px; color: var(--muted); }
+.mission-film, .hub-intro { max-width: 760px; margin-top: 32px; }
+.hub-intro { margin-bottom: 24px; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1100px) {

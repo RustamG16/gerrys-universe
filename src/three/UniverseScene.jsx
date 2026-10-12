@@ -168,7 +168,7 @@ function Body({ body, label, sub, badge, onSelect, clock, paused, glbUrl }) {
       <mesh visible={false}>
         <sphereGeometry args={[Math.max(body.size * 1.8, 0.45), 12, 8]} />
       </mesh>
-      <Html center distanceFactor={9} position={[0, body.size + 0.45, 0]} style={{ pointerEvents: 'none' }} zIndexRange={[10, 0]}>
+      <Html center distanceFactor={9} position={[0, body.labelBelow ? -(body.size + 0.45) : body.size + 0.45, 0]} style={{ pointerEvents: 'none' }} zIndexRange={[10, 0]}>
         <div className={'space-label' + (hovered ? ' hot' : '') + (body.locked ? ' locked' : '') + (body.secret ? ' secret' : '')}>
           {badge && <i>{badge}</i>}
           <b>{label}</b>
@@ -214,12 +214,14 @@ export default function UniverseScene({ paused, visible = true, t, onNavigate, g
   const flight = useRef(null);
   const controls = useRef(null);
   const [flying, setFlying] = useState(false);
+  const navTimer = useRef(null);
+  React.useEffect(() => () => clearTimeout(navTimer.current), []);
 
   const select = (body, pos) => {
     if (paused) return onNavigate(body.to);
     flight.current = { to: pos };
     setFlying(true);
-    setTimeout(() => onNavigate(body.to), 850);
+    navTimer.current = setTimeout(() => onNavigate(body.to), 850);
   };
 
   const label = (b) => (typeof b.name === 'string' ? b.name : t(b.name));

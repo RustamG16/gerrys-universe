@@ -21,3 +21,6 @@ Build passes; 1440 and390 layouts visually inspected; no overflow, headings work
 ## Research basis
 https://villa-novalja.com/ and https://activerelaxing.com/ read11Oct2026. Existing http://localhost:4173/ inspected. Three.js official docs https://threejs.org/docs/ reviewed. Notion Start Here and Studio North Star read through connector. Actual local Convenium DNA overrides unrelated generic Notion project guideline.
 
+
+## v2 (12 Oct 2026)
+Superseded page sequence: see docs/superpowers/specs/2026-10-11-gerrys-universe-v2-design.md. Levels 00 Hub · 01 Worlds · 02 Insights · 03 Mission · 04 Speedrun · 05 Notion HQ.

@@ -34,6 +34,9 @@ export function AppProvider({ children }) {
     writeStore('universe-locale', lang);
   }, [lang]);
   useEffect(() => writeStore('universe-visited', visited), [visited]);
+  useEffect(() => {
+    document.body.dataset.motion = paused ? 'off' : 'on';
+  }, [paused]);
   useEffect(() => writeStore('universe-secret', secret), [secret]);
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'media/project-links.json')

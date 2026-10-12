@@ -35,9 +35,9 @@ export default function ToolCalculator() {
               <span className="tool-bar"><i style={{ width: (v / max) * 100 + '%' }} /></span>
 
               {tool.tiers && (
-                <div className="seg small" role="radiogroup" aria-label={L('Claude Max tier', 'Claude-Max-Stufe')}>
+                <div className="seg small" role="group" aria-label={L('Claude Max tier', 'Claude-Max-Stufe')}>
                   {tool.tiers.map((x) => (
-                    <button key={x.id} role="radio" aria-checked={tier === x.id} onClick={() => setTier(x.id)}>
+                    <button key={x.id} aria-pressed={tier === x.id} onClick={() => setTier(x.id)}>
                       {x.label} · ${x.usd}
                     </button>
                   ))}
@@ -66,7 +66,7 @@ export default function ToolCalculator() {
         <span>{L('Monthly stack', 'Monatlicher Stack')}</span>
         <strong>{euro(total)}</strong>
         <small>
-          {L(`≈ ${euro(total * 12)} per year · before VAT · USD prices × ${USD_EUR} · ${t(ASOF)} · verify at checkout`, `≈ ${euro(total * 12)} pro Jahr · vor USt · USD-Preise × ${USD_EUR} · ${t(ASOF)} · beim Kauf prüfen`)}
+          {L(`≈ ${euro(total * 12)} per year · list prices as shown: ChatGPT and Google include VAT, USD and Notion prices exclude it · USD × ${USD_EUR.toLocaleString('en-IE')} · ${t(ASOF)} · verify at checkout`, `≈ ${euro(total * 12)} pro Jahr · Listenpreise wie angezeigt: ChatGPT und Google inkl. USt, USD- und Notion-Preise exkl. USt · USD × ${USD_EUR.toLocaleString('de-AT')} · ${t(ASOF)} · beim Kauf prüfen`)}
         </small>
       </div>
     </div>
