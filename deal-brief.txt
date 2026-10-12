@@ -1,0 +1,100 @@
+GERRY'S UNIVERSE — DEAL BRIEF (plain-text version for AI assistants)
+Proposal by Rustam Gurbanov (Convenium Studio) for Gerry. Discussion draft, 12 October 2026. Not a contract.
+Interactive site: https://rustamg16.github.io/gerrys-universe/
+Pages: /#/worlds (three businesses) · /#/edge (why Rustam) · /#/partnership (the deal) · /#/ask (this Q&A)
+
+=====================================================================
+1. WHAT RUSTAM OFFERS (page "Your edge")
+=====================================================================
+Target client: owners who have run several businesses for years and are now moving into the digital era.
+
+Pillar 1 — One partner, not many providers.
+Instead of separate contacts for web design, development, automation/IT, hosting and domains,
+marketing and social, booking and CRM tools (6 contacts, 6 briefings, 6 invoices), the owner has
+one contact, one briefing, one plan. The simplification is the product.
+
+Pillar 2 — High-end custom, not templates.
+Custom, cinematic, scroll-animated design built around the brand, not a WordPress theme.
+Grounded in psychology (trust and decisions), human-centered computing (designed and tested
+around real users) and design principles (CRAP: contrast, repetition, alignment, proximity).
+Proof: the Marina Fior website, built in 2 working days (real build time, stated by Rustam).
+
+Pillar 3 — Powered by the Convenium system.
+Rustam is the single contact. Behind him is a repeatable system: AI workflow, a design framework
+(Apollo), documented templates and SOPs, and quality checks (desktop, mobile, both languages,
+accessibility). It is "Rustam + system": not a solo freelancer, not a big agency with overhead.
+Because the work is documented and reusable, it holds up as more clients arrive.
+
+Gerry's three businesses: Marina Fior (psychology practice), Active Relaxing (apartments in
+Schladming and Carinthia, Austria), Villa Olivija (apartments in Stara Novalja, Croatia).
+
+=====================================================================
+2. THE PROPOSED DEAL (page "Partnership")
+=====================================================================
+Role: Rustam is employed by Gerry's (Austrian) company as Digitalisation Manager.
+Contract: permanent, full-time.
+Base salary: EUR 3,465 gross per month x 14 payments = EUR 48,510 gross per year.
+  - This is the legal minimum for the visa category below. Rustam deliberately accepts the
+    minimum base to keep Gerry's fixed cost as low as possible; his upside comes from commission.
+  - Estimated full employer cost incl. ~30% employer contributions: about EUR 63,000 per year
+    (estimate — confirm with payroll).
+
+Two kinds of work:
+  A) Gerry's own businesses (Marina Fior, Active Relaxing, Villa Olivija): salary only.
+  B) Network projects: new clients from Gerry's network (expected: multi-business owners who need
+     unification and automation). Gerry opens the door, Gerry's company signs and invoices,
+     Rustam delivers. Salary + commission.
+
+Commission (network projects only), on NET project revenue (revenue minus direct project costs
+such as freelancers, software, ads), per contract year, bands reset every contract year:
+  - First EUR 100,000: Rustam 10% / Gerry 90%  (Gerry recovers the salary cost first)
+  - Above EUR 100,000: Rustam 70% / Gerry 30%
+  - Paid quarterly, after the client has paid. Rustam may see invoices and costs of commissioned projects.
+Worked examples (yearly, before employer contributions on the commission and before tax):
+  - EUR 50,000 revenue:  Rustam commission 5,000;  Gerry share 45,000;  Gerry after salary cost ~ -18,000
+  - EUR 100,000 revenue: Rustam commission 10,000; Gerry share 90,000;  Gerry after salary cost ~ 27,000
+  - EUR 200,000 revenue: Rustam commission 80,000; Gerry share 120,000; Gerry after salary cost ~ 57,000
+  - Gerry's share covers the full salary cost at about EUR 70,000 network revenue per year.
+  Note: commission is paid as salary, so employer contributions on it come on top. The salary also
+  pays for setting up Gerry's own three businesses, which earns nothing in this calculation.
+
+Ownership:
+  - Rustam keeps his system: Convenium design system (Apollo), components, templates and code base,
+    AI agents, prompts and workflows, Notion OS templates and SOPs, and every improvement to the system.
+  - Gerry owns everything made for him: his websites and apps (the finished products), texts, photos
+    and videos made for him, his Notion workspace and all data, domains, accounts, customer contacts,
+    his brands and logos.
+  - Gerry gets a free, permanent licence to use the system parts inside his products, even if the
+    collaboration ends.
+
+Side activity: Rustam may run Convenium on a small scale alongside the job; no non-compete.
+
+Timeline (months from signing): contract and visa ~0-2 (decision within 8 weeks) → setup of Gerry's
+three businesses ~2-11 → network projects ~9 onward → after 21 of 24 months of employment Rustam can
+switch to the Red-White-Red Card plus (free labour-market access). After that the collaboration can
+continue as a partnership, e.g. Gerry refers clients for a 30% share — terms to agree then.
+
+=====================================================================
+3. VISA — RED-WHITE-RED CARD FOR OTHER KEY WORKERS (Gerry's part)
+=====================================================================
+Rustam is a non-EU citizen currently in Austria on a student residence permit (studies not yet
+finished). The proposed route is the Red-White-Red Card for "other key workers" (sonstige Schlüsselkräfte).
+Requirements (source: oesterreich.gv.at, checked 12 Oct 2026):
+  - at least 55 points (qualification, work experience, language, age);
+  - gross salary at least 50% of the maximum social-insurance contribution base (≈ EUR 3,465/month
+    in 2026, plus special payments);
+  - labour market test: the regional AMS office checks whether a registered jobseeker could fill the
+    role — the job description must be concrete and specific.
+Gerry's steps: (1) sign a written job offer (permanent, full-time, Digitalisation Manager, salary);
+(2) sign the employer declaration under the AuslBG; (3) the application is filed at the residence
+authority (the employer may file it); fee EUR 218; (4) AMS check; (5) decision within 8 weeks;
+work starts only after the card is collected. The card is valid up to 2 years and tied to the employer.
+
+=====================================================================
+4. OPEN POINTS / CAVEATS
+=====================================================================
+- All numbers are proposals for discussion, not agreed terms.
+- The EUR 100,000 band limit should be checked against realistic project prices and volume.
+- Final contract wording should be reviewed by a labour-law advisor; the visa is decided by the
+  authority and the AMS, not by the parties.
+- Employer contributions and taxes are estimates; confirm with an accountant or payroll provider.

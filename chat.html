@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Opening ChatGPT · Gerry’s Universe</title>
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #1B1717; color: #F5F3E8; font: 16px/1.5 Inter, system-ui, sans-serif; text-align: center; padding: 24px; box-sizing: border-box; }
+    a { display: inline-block; margin-top: 16px; padding: 14px 22px; border-radius: 4px; background: #810100; color: #F5F3E8; text-decoration: none; font-weight: 600; }
+    p { max-width: 420px; margin: 0 auto; color: #CFC8BB; }
+  </style>
+</head>
+<body>
+  <main>
+    <p id="msg">Opening ChatGPT with the deal brief…</p>
+    <a id="go" href="https://chatgpt.com/">Open ChatGPT</a>
+  </main>
+  <script>
+    // Short QR target: forwards to ChatGPT with the prepared message from ask-prompts.json (shared with the Ask page).
+    (function () {
+      var lang = /[?&]lang=de\b/.test(location.search) ? 'de' : 'en';
+      document.documentElement.lang = lang;
+      if (lang === 'de') {
+        document.getElementById('msg').textContent = 'ChatGPT wird mit dem Deal-Briefing geöffnet…';
+        document.getElementById('go').textContent = 'ChatGPT öffnen';
+      }
+      fetch('ask-prompts.json')
+        .then(function (r) { return r.json(); })
+        .then(function (p) {
+          var url = 'https://chatgpt.com/?q=' + encodeURIComponent(p[lang] || p.en);
+          document.getElementById('go').href = url;
+          location.replace(url);
+        })
+        .catch(function () {});
+    })();
+  </script>
+</body>
+</html>
