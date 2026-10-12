@@ -8,7 +8,7 @@
 
 **Data.** All copy and numbers live in `src/data/*` as `pair()` records — `levels`, `businesses` (Marina live URL), `plan` (SMART quests, tracks, retreat formats), `estimate` (agency benchmark, market ranges with sources, ChatGPT prompt/URL, `MY_DAYS=2` → 16 h), `tools` (monthly stack, USD→EUR 0.88 assumption, sources), `notion` (teamspaces, comparison, setup), `insights` (maturity, seasonality, journey, ecosystem), `services`, `universe` (3D bodies). Components never hard-code numbers.
 
-**Levels** (`src/levels/`): `Hub` (00, dark space, lazy R3F scene + HTML mirror), `Worlds` (01), `Insights` (02, lazy), `Mission` (03, lazy), `Speedrun` (04, lazy), `NotionHQ` (05, lazy). `App.jsx` owns routing, HUD, GSAP level curtain (skipped on first load and when motion is off), XP toasts and the next-level footer.
+**Levels** (`src/levels/`): `Hub` (00, dark space, lazy R3F scene + HTML mirror), `Worlds` (01), `Insights` (02, lazy), `Mission` (03, lazy), `Speedrun` (04, lazy), `NotionHQ` (05, lazy), `Partnership` (06, lazy; data in `src/data/partnership.js`, styles in `src/styles/partnership.css`). `App.jsx` owns routing, HUD, GSAP level curtain (skipped on first load and when motion is off), XP toasts and the next-level footer.
 
 **3D.** `src/three/UniverseScene.jsx` — React Three Fiber + drei (Stars, Html labels, OrbitControls, useGLTF). Lazy chunk; `frameloop="demand"` when paused or off-screen; DPR ≤ 1.5; camera view offset places the system right of the headline on desktop. WebGL failure or error → static SVG orbit diagram; every destination is also an HTML link. Optional Higgsfield GLB station via `project-links.json → stationGlb`.
 

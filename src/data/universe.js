@@ -10,6 +10,7 @@ export const bodies = [
   { id: 'insights', kind: 'satellite', name: pair('Insights', 'Einblicke'), sub: pair('Charts & diagrams · Level 02', 'Diagramme · Level 02'), to: '/insights', color: 'paper', radius: 2.0, size: 0.2, speed: -0.3, phase: 1.2, tilt: 0.5, labelBelow: true },
   { id: 'speedrun', kind: 'comet', name: 'Speedrun', sub: pair('Agency vs me · Level 04', 'Agentur vs ich · Level 04'), to: '/speedrun', color: 'paper', radius: 6.8, size: 0.14, speed: 0.42, phase: 3.1, tilt: -0.12 },
   { id: 'notion', kind: 'station', name: 'Notion HQ', sub: pair('Workspace design · Level 05', 'Workspace-Aufbau · Level 05'), to: '/notion', color: 'paper', radius: 5.3, size: 0.42, speed: -0.06, phase: 5.6, tilt: 0.18 },
+  { id: 'partnership', kind: 'satellite', name: pair('Partnership', 'Partnerschaft'), sub: pair('Working together · Level 06', 'Zusammenarbeit · Level 06'), to: '/partnership', color: 'hq', radius: 7.4, size: 0.22, speed: 0.05, phase: 0.9, tilt: -0.2 },
 ];
 
 export const spaceColors = {

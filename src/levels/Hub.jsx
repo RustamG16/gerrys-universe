@@ -82,12 +82,12 @@ export default function Hub() {
             <br />
             <em>{L('universe.', 'Universum.')}</em>
           </h1>
-          <p className="hub-lead">{L('Click a world to fly there. Five levels, one plan.', 'Klicke auf eine Welt, um hinzufliegen. Fünf Level, ein Plan.')}</p>
+          <p className="hub-lead">{L('Click a world to fly there. Six levels, one plan.', 'Klicke auf eine Welt, um hinzufliegen. Sechs Level, ein Plan.')}</p>
           <div className="hub-cta">
             <Link className="button cherry" to="/worlds">
               {L('Start the game', 'Spiel starten')} <ArrowRight size={18} />
             </Link>
-            <span className="caption">{L(`${Math.max(0, explored)} of 5 levels explored`, `${Math.max(0, explored)} von 5 Level erkundet`)}</span>
+            <span className="caption">{L(`${Math.max(0, explored)} of 6 levels explored`, `${Math.max(0, explored)} von 6 Level erkundet`)}</span>
           </div>
         </div>
         <p className="hub-hint caption" aria-hidden="true">{L('Drag to orbit · click to fly', 'Ziehen zum Drehen · Klicken zum Fliegen')}</p>

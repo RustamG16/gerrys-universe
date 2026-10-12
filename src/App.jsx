@@ -16,6 +16,7 @@ const Insights = lazy(() => import('./levels/Insights.jsx'));
 const Mission = lazy(() => import('./levels/Mission.jsx'));
 const Speedrun = lazy(() => import('./levels/Speedrun.jsx'));
 const NotionHQ = lazy(() => import('./levels/NotionHQ.jsx'));
+const Partnership = lazy(() => import('./levels/Partnership.jsx'));
 
 export default function App() {
   const location = useLocation();
@@ -73,6 +74,7 @@ export default function App() {
             <Route path="/mission" element={<Mission />} />
             <Route path="/speedrun" element={<Speedrun />} />
             <Route path="/notion" element={<NotionHQ />} />
+            <Route path="/partnership" element={<Partnership />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>
