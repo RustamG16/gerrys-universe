@@ -62,7 +62,7 @@ export default function Race() {
     <div className="race" ref={root}>
       <div className="lane me">
         <span className="who">{L('Rustam + AI stack', 'Rustam + KI-Stack')}</span>
-        <div className="track"><i className="runner" /><Flag size={16} className="flag" /></div>
+        <div className="track"><i className="runner" /><Flag size={16} className="flag" style={{ left: `calc(${(MY_HOURS / agency.hours[1]) * 100}% + 6px)` }} /></div>
         <output>{MY_HOURS} h</output>
       </div>
       <div className="lane agency">

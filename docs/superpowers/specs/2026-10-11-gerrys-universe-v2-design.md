@@ -20,7 +20,7 @@ Marina's link points to `http://localhost:4173/`, which Gerry can't open.
 ## Decisions (from Q&A)
 - **Visual direction: hybrid by level.** The hub is a dark 3D "space" universe map. The levels are cream/noir Convenium editorial pages. Moving between levels uses a cinematic zoom.
 - **3D:** React-Three-Fiber + drei, plus a Higgsfield-generated GLB, plus Remotion clips. There is a slot for an optional Spline embed.
-- **Speed comparison:** Rustam built the Marina site in **~4 h**. The agency benchmark is the ChatGPT/Codex estimate you shared: **€12–18k net (€14.4–21.6k gross), 100–140 h, 4–7 calendar weeks**. It cites a "Werbemonitor 2025" rate of €100–180/h. I couldn't verify that source, so I'll cross-check it with ≥2 Austrian sources and cite everything. Headline: about **25–35× faster**.
+- **Speed comparison:** Rustam built the Marina site in **2 days (≈ 16 working hours)**. The agency benchmark is the ChatGPT/Codex estimate you shared: **€12–18k net (€14.4–21.6k gross), 100–140 h, 4–7 calendar weeks**. It cites a "Werbemonitor 2025" rate of €100–180/h. I couldn't verify that source, so I'll cross-check it with ≥2 Austrian sources and cite everything. Headline: about **6–9× faster**.
 - **QR code:** opens `https://chatgpt.com/?q=<encoded prompt>`, with a Copy button next to it. I'll fix the URL typo (the stray space before the trailing `/`). Prompt:
   `https://rustamg16.github.io/marina-fior-website/ estimate the price for this website according to the austrian market prices if it was done in an agency and estimate time for the making`
 - **Tool stack (monthly power-ups):**
@@ -74,7 +74,7 @@ A Gantt-style quest timeline, 19 Oct 2026 → Apr 2027. Each quest card flips to
 - A "Today" marker on the timeline, plus dependency lines.
 
 ### Level 4 — Speedrun
-- **Race animation** (GSAP and a Remotion clip): an agency bar running 100–140 h / 4–7 wks against a Rustam bar at ~4 h.
+- **Race animation** (GSAP and a Remotion clip): an agency bar running 100–140 h / 4–7 wks against a Rustam bar at 2 days (≈ 16 h).
 - **Cost bars:** agency €12–18k net against Rustam's cost. Rustam's own price is still a placeholder to agree, so the page won't invent one.
 - **Breakdown table**, per the shared estimate: briefing/design 20–30 h, build 35–45 h, blog 12–20 h, self-check/animations/booking 15–25 h, QA/launch 18–20 h.
 - **QR card:** generated locally with the `qrcode` npm package. It opens ChatGPT with the prompt prefilled, and has a Copy button.

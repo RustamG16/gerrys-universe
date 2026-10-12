@@ -1,6 +1,6 @@
 import React from 'react';
 import { useApp, media } from '../lib/store.jsx';
-import { agency, MY_HOURS, ASOF } from '../data/estimate.js';
+import { agency, MY_HOURS, MY_DAYS, ASOF } from '../data/estimate.js';
 import { MARINA_URL } from '../data/businesses.js';
 import LevelHead from '../components/LevelHead.jsx';
 import Reveal from '../components/Reveal.jsx';
@@ -34,8 +34,8 @@ export default function Speedrun() {
         <div className="stat-row">
           <div className="stat me">
             <small>{L('My build time', 'Meine Bauzeit')}</small>
-            <b>~{MY_HOURS} h</b>
-            <span>{L('less than one working day', 'weniger als ein Arbeitstag')}</span>
+            <b>{L(`${MY_DAYS} days`, `${MY_DAYS} Tage`)}</b>
+            <span>{L(`≈ ${MY_HOURS} working hours`, `≈ ${MY_HOURS} Arbeitsstunden`)}</span>
           </div>
           <div className="stat">
             <small>{L('Agency effort', 'Agenturaufwand')}</small>

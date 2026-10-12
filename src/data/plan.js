@@ -19,7 +19,7 @@ export const quests = [
     pair('Marina goes live', 'Marina geht live'),
     pair('Move the finished Marina Fior website to her own domain with legal pages, booking link and privacy-friendly analytics.', 'Die fertige Marina-Fior-Website mit Rechtstexten, Buchungslink und datenschutzfreundlicher Analyse auf ihre eigene Domain bringen.'),
     pair('Site live on domain · Search Console verified · sitemap submitted · Lighthouse ≥ 90 on mobile · 0 broken links.', 'Website live auf Domain · Search Console verifiziert · Sitemap eingereicht · Lighthouse ≥ 90 mobil · 0 defekte Links.'),
-    pair('The site is already built (~4 h). Only domain access, DNS and Marina’s approvals remain.', 'Die Website ist bereits gebaut (~4 h). Es fehlen nur Domainzugang, DNS und Marinas Freigaben.'),
+    pair('The site is already built (2 days). Only domain access, DNS and Marina’s approvals remain.', 'Die Website ist bereits gebaut (2 Tage). Es fehlen nur Domainzugang, DNS und Marinas Freigaben.'),
     pair('Marina is the trust anchor of the universe — the fastest visible win.', 'Marina ist der Vertrauensanker des Universums – der schnellste sichtbare Erfolg.'),
     pair('19 Oct → 1 Nov 2026', '19. Okt → 1. Nov 2026'),
     'Rustam · Marina'),
